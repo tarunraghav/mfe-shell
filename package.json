@@ -7,10 +7,12 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:mfe-shell": "node dist/mfe-shell/server/server.mjs"
+    "serve:ssr:mfe-shell": "node dist/mfe-shell/server/server.mjs",
+    "run:all": "node node_modules/@angular-architects/module-federation/src/server/mf-dev-server.js"
   },
   "private": true,
   "dependencies": {
+    "@angular-architects/module-federation": "^19.0.0",
     "@angular/animations": "^19.1.0",
     "@angular/common": "^19.1.0",
     "@angular/compiler": "^19.1.0",
@@ -22,6 +24,8 @@
     "@angular/router": "^19.1.0",
     "@angular/ssr": "^19.1.4",
     "express": "^4.18.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
@@ -33,12 +37,15 @@
     "@types/express": "^4.17.17",
     "@types/jasmine": "~5.1.0",
     "@types/node": "^18.18.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
     "jasmine-core": "~5.5.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ngx-build-plus": "^19.0.0",
     "typescript": "~5.7.2"
   }
 }
